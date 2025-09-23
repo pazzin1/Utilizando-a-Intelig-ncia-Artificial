@@ -6,70 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
-        alternativas: [
+        "enunciado": "Qual é a sua relação com o horário escolar?",
+        "alternativas": [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                "texto": "Meu período de estudo principal é durante a manhã, aproveitando o início do dia.",
+                "afirmacao": " Eu frequento a escola no período diurno, o que se alinha com a minha rotina."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                "texto": "Minhas atividades escolares ocorrem no período da tarde, adaptando-se à minha agenda.",
+                "afirmacao": " Eu tenho aulas no turno vespertino, o que funciona bem para o meu dia a dia."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-        alternativas: [
+        "enunciado": "Entre as áreas de conhecimento, quais despertam mais o seu interesse?",
+        "alternativas": [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                "texto": "Tenho uma forte inclinação para disciplinas que envolvem lógica, como matemática e ciências da natureza.",
+                "afirmacao": " As matérias de Exatas são as minhas favoritas, pois me atraem pela precisão e raciocínio lógico."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                "texto": "Me sinto mais conectado(a) a matérias que exploram a comunicação e o pensamento crítico, como português e história.",
+                "afirmacao": " As disciplinas de Linguagens e Humanas são as que mais me interessam, pois me desafiam a interpretar e a me expressar."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-        alternativas: [
+        "enunciado": "Em que fase do Ensino Médio você se encontra?",
+        "alternativas": [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                "texto": "Estou nos anos finais, prestes a concluir esta etapa.",
+                "afirmacao": " Minha formatura do Ensino Médio se aproxima, e estou me preparando para o próximo ciclo."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                "texto": "Ainda tenho um caminho considerável a percorrer até a formatura.",
+                "afirmacao": " Sou um(a) aluno(a) mais novo(a) no Ensino Médio e ainda levarei um tempo para me formar."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
+        "enunciado": "Como você avalia a sua experiência geral na escola?",
+        "alternativas": [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                "texto": "Considero a escola um ambiente enriquecedor, que me estimula a aprender e a me desenvolver.",
+                "afirmacao": " Eu aprecio a escola como um lugar de aprendizado e crescimento, que me motiva a ser um(a) melhor estudante."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                "texto": "Prefiro buscar conhecimento por conta própria, fora do formato tradicional de sala de aula.",
+                "afirmacao": " O modelo de ensino tradicional não me agrada totalmente; meu interesse está mais em assuntos que posso explorar por conta própria."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-        alternativas: [
+        "enunciado": "Qual a sua perspectiva sobre a continuidade dos estudos após o Ensino Médio?",
+        "alternativas": [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                "texto": "Tenho a intenção de seguir para o ensino superior e fazer uma faculdade.",
+                "afirmacao": " Meu objetivo é cursar uma faculdade para me especializar em uma área de interesse no futuro."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                "texto": "A faculdade não é o meu foco imediato, mas valorizo outras formas de aprendizado.",
+                "afirmacao": " No momento, fazer um curso superior não é meu plano principal. Estou aberto(a) a outras oportunidades de capacitação profissional."
             }
         ]
-    },
+    }
 ];
 
 
@@ -106,7 +106,7 @@ function respostaSelecionada(opcaoSelecionada){
 
 }
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Disposição escolar...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 
