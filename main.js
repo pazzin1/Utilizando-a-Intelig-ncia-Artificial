@@ -10,7 +10,7 @@ const perguntas = [
         "alternativas": [
             {
                 "texto": "Meu período de estudo principal é durante a manhã, aproveitando o início do dia.",
-                "afirmacao": " Eu frequento a escola no período diurno, o que se alinha com a minha rotina."
+                "afirmacao": " frequento a escola no período diurno, o que se alinha com a minha rotina."
             },
             {
                 "texto": "Minhas atividades escolares ocorrem no período da tarde, adaptando-se à minha agenda.",
@@ -106,7 +106,7 @@ function respostaSelecionada(opcaoSelecionada){
 
 }
 function mostraResultado(){
-    caixaPerguntas.textContent = "Disposição escolar...";
+    caixaPerguntas.textContent = "Eu...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 
